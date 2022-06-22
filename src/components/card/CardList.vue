@@ -60,28 +60,9 @@ export default {
 
     const titleFilter = () => products.value.sort((a, b) => a.title.localeCompare(b.title))
 
+    // eslint-disable-next-line arrow-body-style
     const priceFilter = (type) => {
-      const arr = JSON.parse(JSON.stringify(products.value))
-
-      for (let i = 0; i < arr.length; i++) {
-        for (let j = 0; j < arr.length; j++) {
-          if (type === cardFilterEnum.MIN_PRICE) {
-            if (arr[i].price < arr[j].price) {
-              const elem = arr[i]
-              arr[i] = arr[j]
-              arr[j] = elem
-            }
-          } else if (type === cardFilterEnum.MAX_PRICE) {
-            if (arr[i].price > arr[j].price) {
-              const elem = arr[i]
-              arr[i] = arr[j]
-              arr[j] = elem
-            }
-          }
-        }
-      }
-
-      return arr
+      return products.value.sort((a, b) => type === cardFilterEnum.MIN_PRICE ? a.price - b.price : b.price - a.price)
     }
 
     const activeFilterAction = (filter) => {
