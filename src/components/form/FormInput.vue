@@ -13,8 +13,8 @@
 
     <input
       v-if="!textarea"
-      :value="input"
       :id="related"
+      :value="input"
       class="FormInput__input"
       :class="{ 'FormInput__input--failed': !valid }"
       :placeholder="placeholder"
@@ -25,9 +25,9 @@
 
     <textarea
       v-if="textarea"
+      :id="related"
       :value="input"
       :placeholder="placeholder"
-      :id="related"
       class="FormInput__input FormInput__textarea"
       @input="$emit('input', $event.target.value)"
     />

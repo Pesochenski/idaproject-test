@@ -18,8 +18,8 @@
 
     <transition name="CardFilter__transition">
       <div
-        class="CardFilter__content"
         v-if="isOpen"
+        class="CardFilter__content"
       >
         <p
           v-for="(item, index) in Object.values(cardFilterEnum)"
@@ -47,7 +47,7 @@ export default {
 
     const activeFilter = computed({
       get: () => store.getters['products/activeFilter'],
-      set: (val) => store.commit('products/setActiveFilter', val)
+      set: (val) => store.commit('products/setActiveFilter', val),
     })
 
     const filterTitle = {

@@ -20,16 +20,14 @@ export default {
       type: String,
       required: true,
       validator: (val) => Object.values(buttonStateEnum).includes(val),
-    }
+    },
   },
 
   setup (props) {
-    const buttonColor = computed(() => {
-      return {
-        [buttonStateEnum.DISABLED]: 'FormButton--disabled',
-        [buttonStateEnum.ACTIVE]: 'FormButton--active',
-      }[props.state]
-    })
+    const buttonColor = computed(() => ({
+      [buttonStateEnum.DISABLED]: 'FormButton--disabled',
+      [buttonStateEnum.ACTIVE]: 'FormButton--active',
+    }[props.state]))
 
     return {
       buttonColor,

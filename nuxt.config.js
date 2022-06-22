@@ -56,6 +56,11 @@ export default {
 
   components: true,
 
+  target: 'static',
+  router: {
+    base: '/idaproject-test/',
+  },
+
   build: {
     loaders: {
       scss: {
