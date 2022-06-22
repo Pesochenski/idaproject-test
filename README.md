@@ -1,18 +1,17 @@
 # idaproject-test
 
-## Build Setup
+This is my implementation of idaproject test task
+
+### Build Setup
 
 ```bash
-# install dependencies
+# first step
 $ npm install
 
-# serve with hot reload at localhost:3000
+# second step
 $ npm run dev
 
-# build for production and launch server
+# or
 $ npm run build
 $ npm run start
-
-# generate static project
-$ npm run generate
 ```
