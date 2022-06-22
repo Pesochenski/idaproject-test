@@ -1,0 +1,23 @@
+$color-white-1: #FFFEFB;
+
+$color-gray-1: #EEEEEE;
+$color-gray-2: #B4B4B4;
+
+$color-black-1: #49485E;
+$color-black-2: #3F3F3F;
+
+$color-red: #FF8484;
+$color-green: #7BAE73;
+
+:root {
+  --color-white-1: #{ $color-white-1 };
+
+  --color-gray-1: #{ $color-gray-1 };
+  --color-gray-2: #{ $color-gray-2 };
+
+  --color-black-1: #{ $color-black-1 };
+  --color-black-2: #{ $color-black-2 };
+
+  --color-red: #{ $color-red };
+  --color-green: #{ $color-green };
+}

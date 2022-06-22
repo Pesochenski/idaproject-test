@@ -1,0 +1,7 @@
+$transition-short: 0.1s;
+$transition-long: 0.3s;
+
+:root {
+  --transition-short: #{ $transition-short };
+  --transition-long: #{ $transition-long };
+}

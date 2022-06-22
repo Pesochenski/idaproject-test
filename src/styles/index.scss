@@ -1,0 +1,23 @@
+@import "variables";
+@import "mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  background: var(--color-white-1);
+}
+
+button, a, input, textarea {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+button {
+  font-family: 'Inter', sans-serif;
+}
